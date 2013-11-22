@@ -1,0 +1,227 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_YUVViewer_DIALOG DIALOGEX 0, 0, 484, 413
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "YUVViewer - 使用说明请看 About"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    LTEXT           "YUV File:",IDC_STATIC_SRC_YUVFILE,1,8,37,8
+    EDITTEXT        IDC_EDT_SRC_PATH,43,5,421,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_SRC_BROWSE,466,5,17,14
+    LTEXT           "YV12 File:",IDC_STATIC_DST_YUVFILE,1,25,41,8
+    EDITTEXT        IDC_EDT_DST_PATH,43,23,421,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_DST_BROWSE,466,23,17,14
+    LTEXT           "FOURCC:",IDC_STATIC_FOURCC,1,44,29,8
+    COMBOBOX        IDC_CMB_FOURCC,30,42,61,301,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "YUV Order:",IDC_STATIC_ORDER,98,44,41,8
+    EDITTEXT        IDC_EDT_ORDER,144,41,53,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Image Size:",IDC_STATIC_IMAGESIZE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,203,44,45,8
+    COMBOBOX        IDC_CMB_IMAGESIZE,253,42,99,301,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDT_WIDTH,358,41,37,14,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "X",IDC_STATIC_X,398,44,8,8
+    EDITTEXT        IDC_EDT_HEIGHT,408,41,37,14,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "About",IDC_BTN_ABOUT,448,41,34,14
+    LTEXT           "Frame:",IDC_STATIC_FRAME,1,62,25,8
+    EDITTEXT        IDC_EDT_FRAME_START,30,59,27,13,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDT_FRAME_FINISH,63,59,27,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_FRAME_INFO,95,59,45,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "FPS",IDC_STATIC_FPS,145,62,13,8
+    EDITTEXT        IDC_EDT_FPS,162,60,21,13,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Jump",IDC_BTN_FRAME_JUMP,188,59,34,14
+    PUSHBUTTON      "Forward",IDC_BTN_FORWARD,222,59,34,14
+    PUSHBUTTON      "Back",IDC_BTN_BACK,256,59,34,14
+    PUSHBUTTON      "Play",IDC_BTN_PLAY,290,59,34,14
+    PUSHBUTTON      "Stop",IDC_BTN_STOP,324,59,34,14
+    LTEXT           "Display:",IDC_STATIC_DISPLAY,364,62,33,8
+    COMBOBOX        IDC_CMB_COMPONETS,398,60,84,279,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_STATIC_IMAGE,0,77,483,335,WS_BORDER
+END
+
+IDD_DLG_ABOUT DIALOGEX 0, 0, 241, 220
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 YUVViewer"
+FONT 12, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,189,196,41,18
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,197,16,16
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,201,69,8
+    LTEXT           "",IDC_STATIC_ABOUT,3,4,235,186,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Final YUVViewer"
+            VALUE "FileVersion", "1, 2, 0, 0"
+            VALUE "InternalName", "YUVViewer"
+            VALUE "LegalCopyright", "Copyright LiuYin (C) 2014"
+            VALUE "OriginalFilename", "YUVViewer.exe"
+            VALUE "ProductName", "Final YUVViewer"
+            VALUE "ProductVersion", "1, 2, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_YUVViewer_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 477
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 406
+    END
+
+    IDD_DLG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\YUVViewer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\YUVViewer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 YUVViewer(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\YUVViewer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

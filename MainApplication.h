@@ -1,0 +1,28 @@
+
+#ifndef MainApplication_H
+#define MainApplication_H
+
+//////////////////////////////////////////////////////////////////////////
+
+#include <AfxWin.h>
+
+//////////////////////////////////////////////////////////////////////////
+
+class CMainApplication : public CWinApp
+{
+public:
+	CMainApplication();
+
+	//{{AFX_VIRTUAL(CMainApplication)
+public:
+	virtual BOOL InitInstance();
+	//}}AFX_VIRTUAL
+
+	//{{AFX_MSG(CMainApplication)
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+//////////////////////////////////////////////////////////////////////////
+
+#endif
